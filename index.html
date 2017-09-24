@@ -253,6 +253,119 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://mobiledevelop.cn/2017/09/24/AndroidStudio删除本地依赖缓存/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="文全">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mobile Develop">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/24/AndroidStudio删除本地依赖缓存/" itemprop="url">AndroidStudio删除本地依赖缓存</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-24T11:34:01+08:00">
+                2017-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>有些时候由于依赖代码更改，但却未发布版本，依然沿用了之前的版本号。<br>但此时已经修改了源码，在compile的时候，Android Studio首先是在本地gradle中查找是否有对应的依赖库，如果有，直接使用本地的，就不会下载远程仓库的。<br>这时候就有上面所说的问题了，无法更新到最新的依赖库，就需要删除本地的，让Android Studio下载最新的远程依赖，达到最新版本依赖。</p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>cd到.gradle目录，不同操作系统的路径不同。<br>windows一般在C:\Users\用户名\/.gradle\caches\modules-2\files-2.1<br>mac一般在/Users/用户名/.gradle/caches/modules-2/files-2.1<br>找到对应的包名，删除对应的版本下面的所有文件即可。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://mobiledevelop.cn/2017/09/07/导出Chrome插件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -750,7 +863,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
@@ -763,7 +876,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">Tags</span>
               
             </div>

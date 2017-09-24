@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Chrome," />
+  <meta name="keywords" content="AndroidStudio," />
 
 
 
@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="导出Chrome插件的方法 查看Chrome插件的id  通过非Chrome浏览器外的其他浏览器访问（将【扩展程序的32位ID号码】替换为查看到的Chrome插件id）https://clients2.google.com/service/update2/crx?response=redirect&amp;amp;x=id%3D扩展程序的32位ID号码%26uc&amp;amp;prodversion=32">
-<meta name="keywords" content="Chrome">
+<meta name="description" content="问题描述有些时候由于依赖代码更改，但却未发布版本，依然沿用了之前的版本号。但此时已经修改了源码，在compile的时候，Android Studio首先是在本地gradle中查找是否有对应的依赖库，如果有，直接使用本地的，就不会下载远程仓库的。这时候就有上面所说的问题了，无法更新到最新的依赖库，就需要删除本地的，让Android Studio下载最新的远程依赖，达到最新版本依赖。 解决方案cd到.">
+<meta name="keywords" content="AndroidStudio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="导出Chrome插件">
-<meta property="og:url" content="http://mobiledevelop.cn/2017/09/07/导出Chrome插件/index.html">
+<meta property="og:title" content="AndroidStudio删除本地依赖缓存">
+<meta property="og:url" content="http://mobiledevelop.cn/2017/09/24/AndroidStudio删除本地依赖缓存/index.html">
 <meta property="og:site_name" content="Mobile Develop">
-<meta property="og:description" content="导出Chrome插件的方法 查看Chrome插件的id  通过非Chrome浏览器外的其他浏览器访问（将【扩展程序的32位ID号码】替换为查看到的Chrome插件id）https://clients2.google.com/service/update2/crx?response=redirect&amp;amp;x=id%3D扩展程序的32位ID号码%26uc&amp;amp;prodversion=32">
-<meta property="og:updated_time" content="2017-09-07T03:38:30.000Z">
+<meta property="og:description" content="问题描述有些时候由于依赖代码更改，但却未发布版本，依然沿用了之前的版本号。但此时已经修改了源码，在compile的时候，Android Studio首先是在本地gradle中查找是否有对应的依赖库，如果有，直接使用本地的，就不会下载远程仓库的。这时候就有上面所说的问题了，无法更新到最新的依赖库，就需要删除本地的，让Android Studio下载最新的远程依赖，达到最新版本依赖。 解决方案cd到.">
+<meta property="og:updated_time" content="2017-09-24T04:36:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="导出Chrome插件">
-<meta name="twitter:description" content="导出Chrome插件的方法 查看Chrome插件的id  通过非Chrome浏览器外的其他浏览器访问（将【扩展程序的32位ID号码】替换为查看到的Chrome插件id）https://clients2.google.com/service/update2/crx?response=redirect&amp;amp;x=id%3D扩展程序的32位ID号码%26uc&amp;amp;prodversion=32">
+<meta name="twitter:title" content="AndroidStudio删除本地依赖缓存">
+<meta name="twitter:description" content="问题描述有些时候由于依赖代码更改，但却未发布版本，依然沿用了之前的版本号。但此时已经修改了源码，在compile的时候，Android Studio首先是在本地gradle中查找是否有对应的依赖库，如果有，直接使用本地的，就不会下载远程仓库的。这时候就有上面所说的问题了，无法更新到最新的依赖库，就需要删除本地的，让Android Studio下载最新的远程依赖，达到最新版本依赖。 解决方案cd到.">
 
 
 
@@ -131,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://mobiledevelop.cn/2017/09/07/导出Chrome插件/"/>
+  <link rel="canonical" href="http://mobiledevelop.cn/2017/09/24/AndroidStudio删除本地依赖缓存/"/>
 
 
 
 
 
-  <title>导出Chrome插件 | Mobile Develop</title>
+  <title>AndroidStudio删除本地依赖缓存 | Mobile Develop</title>
   
 
 
@@ -256,7 +256,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://mobiledevelop.cn/2017/09/07/导出Chrome插件/">
+    <link itemprop="mainEntityOfPage" href="http://mobiledevelop.cn/2017/09/24/AndroidStudio删除本地依赖缓存/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="文全">
@@ -273,7 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">导出Chrome插件</h1>
+          <h1 class="post-title" itemprop="name headline">AndroidStudio删除本地依赖缓存</h1>
         
 
         <div class="post-meta">
@@ -285,8 +285,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-07T11:34:01+08:00">
-                2017-09-07
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-24T11:34:01+08:00">
+                2017-09-24
               </time>
             
 
@@ -320,12 +320,8 @@
       
 
       
-        <h1 id="导出Chrome插件的方法"><a href="#导出Chrome插件的方法" class="headerlink" title="导出Chrome插件的方法"></a>导出Chrome插件的方法</h1><ol>
-<li><p>查看Chrome插件的id</p>
-</li>
-<li><p>通过非Chrome浏览器外的其他浏览器访问（将【扩展程序的32位ID号码】替换为查看到的Chrome插件id）<br><a href="https://clients2.google.com/service/update2/crx?response=redirect&amp;x=id%3D扩展程序的32位ID号码%26uc&amp;prodversion=32" target="_blank" rel="external">https://clients2.google.com/service/update2/crx?response=redirect&amp;x=id%3D扩展程序的32位ID号码%26uc&amp;prodversion=32</a></p>
-</li>
-</ol>
+        <h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>有些时候由于依赖代码更改，但却未发布版本，依然沿用了之前的版本号。<br>但此时已经修改了源码，在compile的时候，Android Studio首先是在本地gradle中查找是否有对应的依赖库，如果有，直接使用本地的，就不会下载远程仓库的。<br>这时候就有上面所说的问题了，无法更新到最新的依赖库，就需要删除本地的，让Android Studio下载最新的远程依赖，达到最新版本依赖。</p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>cd到.gradle目录，不同操作系统的路径不同。<br>windows一般在C:\Users\用户名\/.gradle\caches\modules-2\files-2.1<br>mac一般在/Users/用户名/.gradle/caches/modules-2/files-2.1<br>找到对应的包名，删除对应的版本下面的所有文件即可。</p>
 
       
     </div>
@@ -355,7 +351,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Chrome/" rel="tag"># Chrome</a>
+            <a href="/tags/AndroidStudio/" rel="tag"># AndroidStudio</a>
           
         </div>
       
@@ -368,8 +364,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/27/0827头条面试/" rel="next" title="0827头条面试">
-                <i class="fa fa-chevron-left"></i> 0827头条面试
+              <a href="/2017/09/07/导出Chrome插件/" rel="next" title="导出Chrome插件">
+                <i class="fa fa-chevron-left"></i> 导出Chrome插件
               </a>
             
           </div>
@@ -377,10 +373,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/09/24/AndroidStudio删除本地依赖缓存/" rel="prev" title="AndroidStudio删除本地依赖缓存">
-                AndroidStudio删除本地依赖缓存 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -500,7 +492,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#导出Chrome插件的方法"><span class="nav-number">1.</span> <span class="nav-text">导出Chrome插件的方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li></ol></div>
             
 
           </div>
